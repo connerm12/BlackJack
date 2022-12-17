@@ -20,10 +20,7 @@ You can install the development version of BlackJack like so:
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
-library(BlackJack)
-## basic example code
-```
+
 
 What is special about using `README.Rmd` instead of just `README.md`?
 You can include R chunks like so:

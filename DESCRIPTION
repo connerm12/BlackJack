@@ -1,12 +1,11 @@
 Package: BlackJack
-Title: What the Package Does (One Line, Title Case)
+Title: Play BlackJack
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R: person("Conner","McNeely", "cdmcneel@iu.edu", role = c("aut", "cre"))
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: The purpose of my package is to play a game of blackjack. 
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: use_gp3l_license()
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
