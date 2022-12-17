@@ -21,9 +21,10 @@ The purpose of my package is to play a game of blackjack.
 
 You can install the development version of BlackJack like so:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```{r}
+install.packages("BlackJack")
 ```
+
 
 ## Example
 
@@ -34,4 +35,5 @@ library(BlackJack)
 ## basic example code
 ```
 
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
