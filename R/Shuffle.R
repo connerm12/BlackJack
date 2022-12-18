@@ -1,14 +1,13 @@
 #' Shuffle Function
 #'
-#' @param Deck
+#' @param Deck Enter the deck we want to shuffle up
 #'
 #' @return Returns a well-mixed deck
 #' @export
 #'
-#' @examples Shuffle()
-Shuffle<- function(){
-  new_assign<- sample(1:nrow(Deck),nrow(Deck))
-  assign("Deck", Deck[-1,], envir = parent.env(environment()))
+#' @examples Shuffle(Deck1)
+Shuffle<- function(Deck){
+  new_assign<- Deck[sample(1:nrow(Deck),nrow(Deck), T),c(1:2)]
 }
 
 

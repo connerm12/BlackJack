@@ -11,6 +11,9 @@ Hit(Deck, hand)
 
 \item{hand}{Input the hand that needs a new card}
 }
+\value{
+Returns a new hand for individual who is taking a hit.
+}
 \description{
 The "Hit" function
 }

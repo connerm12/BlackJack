@@ -7,14 +7,14 @@
 Shuffle(Deck)
 }
 \arguments{
-\item{Deck}{Input the deck of cards you wish too be shuffled}
+\item{Deck}{Enter the deck we want to shuffle up}
 }
 \value{
-Will return a function capable of randomizing the deck
+Returns a well-mixed deck
 }
 \description{
 Shuffle Function
 }
 \examples{
-Shuffle(Deck2)
+Shuffle(Deck1)
 }
