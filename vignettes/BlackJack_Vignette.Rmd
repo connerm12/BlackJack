@@ -7,13 +7,42 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
 
 ```{r setup}
 library(BlackJack)
 ```
+
+# Introduction
+
+<p> Have you ever had a long night of school work and need something fun to blow off some steam? What about when you were home on a Friday night alone, because all of your buddies are out with their significant others?  Or if you are a card-shark in the making, and just want to get some practice in.</p>
+
+<p>Well this is the package just for you. Black jack gives you some of the best odds out of all of the casino games. This package is for when you aren't at that environment, and maybe want a little practice. It never hurt anybody, and in the process you can take some of your friends' money the next time they are free on a Friday. The package is really simple in design. We wanted to bring together an easy game of black jack. We want to offer the user an outlet to practice their skills if they choose. There are just two players. Yourself and the dealer. Because that's what really counts. So sit back, crack a cold one, relax, and let's play some good old black jack. <p> 
+
+<p> The BlackJack package took a page out of the casino's book with a slight twist. Here we added the freedom for you to decide on how many decks you'd like to play with. The popular casino choice is 6 decks, for a total of 312 cards if that's how you want to play it. It really makes little difference to us how you want to play it, we will have it set up for you either way. 
+```{r}
+#Begin by inputting the number of Decks you would like to play with. 
+Deck1<- Build_playing_deck(5)
+#Just a quick check to make sure everything is looking correct. 
+head(Deck1)
+tail(Deck1)
+```
+
+# We begin
+
+Alright, we have the deck's inputted into the system. Now we can begin the game. The dealer will go ahead and deal you a hand all you have to do is ask for one. We will show you how to do that below. 
+
+```{r}
+hand1<- MyHand(Deck1)
+```
+Okay, that's a start. We now know what we are holding in our hand, let's find out what the dealer has going on. Here we will have the dealer show us the visible card in his hand (up card). We will keep his second card (hole card) hidden from view. 
+```{r}
+Dealers_First(Deck1)
+```
+Alright, the dealer is sitting pretty solid. We know that our score is not looking too good compared to the dealer's hand here. So, we will want to go ahead and take another card (hit). So dealer, hit us!
+
+```{r}
+hand2<- Hit(Deck1, hand1)
+```
+Alright, we know what we have now. Feeling confident? Let's see what the dealer has. 
+
+
