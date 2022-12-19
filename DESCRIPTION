@@ -1,9 +1,7 @@
 Package: BlackJack
 Title: Play BlackJack
 Version: 0.0.0.9000
-Authors@R: person("Conner","McNeely", "cdmcneel@iu.edu", role = c("aut", "cre"))
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+Author: Conner McNeely
 Description: The purpose of my package is to play a game of blackjack. 
 License: use_gp3l_license()
 Encoding: UTF-8

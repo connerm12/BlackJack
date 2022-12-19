@@ -1,5 +1,6 @@
 #This defines the shiny app used in the program
-library(shiny)
+readytoplay<- function(){
+require(shiny)
 shinyApp(
 ui <- fluidPage(
       radioButtons("radio", label = h1("Ready to Play?!"),
@@ -13,3 +14,4 @@ server <- function(input, output) {
   output$value <- renderPrint({input$radio})
 }
 )
+}

@@ -11,6 +11,7 @@ vignette: >
 ```{r setup}
 #Load the library
 library(BlackJack)
+readytoplay()
 ```
 
 # Introduction
@@ -49,7 +50,7 @@ Alright, the dealer is sitting pretty solid. We know that our score is not looki
 
 ```{r}
 #Here we input the deck used along with the hand we were dealt
-my_cards1<- Hit(Deck1, hand1)
+my_cards1<- Hit(Deck1, my_hand)
 ```
 Alright, we know what we have now. Feeling confident? Let's see what the dealer has. 
 
@@ -65,7 +66,7 @@ Dealers_cards1<- Hit(Deck1, Dealers_cards)
 <p> Alright that's the hand! Don't worry, there's more! We will play one more this time with less explaining and just playing. But first we should shuffle our deck. </p> 
 
 ```{r}
-Deck2<- Shuffle(Deck1)
+Deck2<- Shuffle(Build_playing_deck(4))
 head(Deck2)
 ```
 Okay the deck has been shuffled. Let's start up a new hand!
@@ -93,4 +94,10 @@ Alright! One more hit on the dealer!
 #Input Deck2 and the dealer's cards (Dealers_cards2)
 Dealers_cards3<- Hit(Deck2, Dealers_cards2)
 ```
-Finally!
+<p> Finally! We have gone through and played two hands of BlackJack. This concludes my demonstration of the BlackJack package. We have a package built for the everyday user of R. The idea behind this package was too keep it simple and just have a fun time. This vignette walks you through the basics of how to play the game while simultaneously operating the functions within the package. </p> 
+
+<p> There are quite a couple pitfalls associated with this package, when I do a self-reflection. The largest reason for the lack of having them done is there just wasn't enough time in the day for me to bring this to where I ideally would like it. As you may have noticed, this is lacking extra games. That would be my first priority to solidify this project. Beginning with adding the game of spades, followed by hearts, euchre, hold'em, etc. This package has a ton of potential. It could be a great time for anyone looking to just have an escape. The plan of action to implement these would be, write out the game rules and model the functions within the package after the separate games. Similar to how I have done it with the BlackJack package.</p>
+
+<p>The second large scale improvement would be too implement a better shiny object. This was not a strong point of mine. In the future it would be cool to sit down and have the ability to see an actual playing card surface within a shiny application. After plenty of hours searching, I realized this was beyond my scope of knowledge at the moment. A way for me to potentially combat this in the future would be to dive head first into learning about shiny objects.</p>
+
+<p> Overall, this project took a lot of my time (even if it doesn't look like it would). I have had a very bittersweet relationship with it, but I hope it can bring others some enjoyment. So please, this round's on the house. </p> 
