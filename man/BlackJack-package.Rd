@@ -4,7 +4,7 @@
 \name{BlackJack-package}
 \alias{BlackJack}
 \alias{BlackJack-package}
-\title{BlackJack: Play BlackJack}
+\title{BlackJack: BlackJack}
 \description{
 The purpose of my package is to play a game of blackjack.
 }

@@ -22,10 +22,11 @@ The goal of BlackJack is to ...
 
 ## Installation
 
-You can install the development version of BlackJack like so:
+You can install the development version of BlackJack from [GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("connerm12/BlackJack")
 ```
 
 ## Example

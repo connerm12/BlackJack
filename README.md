@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of BlackJack is to …
+The goal of BlackJack is to i
 
 ## Installation
 
